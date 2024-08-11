@@ -1,7 +1,9 @@
 {
-  "name": "react-virtual-scroll-list",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-virtual-scroll-lists",
+  "version": "0.1.2",
+  "main": "src/index.js",
+  "author": "Ashok Arumugam",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -13,9 +15,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "eslintConfig": {
     "extends": [

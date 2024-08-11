@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react'
 
-const VirtualList = ({ items, height, width, listId }) => {
+const VirtualListWrapper = ({ items, height, width, listId }) => {
 
     const [virEntItems, setVirEntItems] = useState({})
 
@@ -44,6 +44,6 @@ const VirtualList = ({ items, height, width, listId }) => {
         </div>
     );
 }
-export default VirtualList;
+export default VirtualListWrapper;
 
 
